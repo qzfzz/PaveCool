@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<!-- This version (html) uses HTML5 and is for a web site.  The htm version is for QTextBrowser. -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+table.half {
+	table-layout: fixed;
+	width: 50%;
+	border-width: 1px;
+	border-collapse:collapse;
+}
+table.half th {
+	border-width: 1px;
+	padding: 2%;
+	border-style: solid;
+}
+table.half td {
+	border-width: 1px;
+	padding: 1%;
+	border-style: solid;
+	text-align: center;
+}
+table.full {
+	table-layout: fixed;
+	width: 100%;
+	border-width: 1px;
+	border-collapse:collapse;
+}
+table.full th {
+	border-width: 1px;
+	padding: 1%;
+	border-style: solid;
+}
+.col8 {
+	width: 8%;
+	vertical-align: middle;
+}
+.col16 {
+	width: 16%;
+	vertical-align: middle;
+}
+.col60 {
+	width: 60;
+	text-align: left;
+	vertical-align: middle;
+}
+table.full td {
+	border-width: 1px;
+	padding: 1%;
+	border-style: solid;
+}
+.cellc {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+<a name="toc"></a>
+<h2>Table of Contents</h2>
+<ul>
+<li><h3>Running PaveCool</h3></li>
+<ul>
+<li><a href="#general">General Procedure</a></li>
+<li><a href="#general">Project Title</a></li>
+<li><a href="#time">Paving Time</a></li>
+<li><a href="#envir">Environmental Conditions</a></li>
+<li><a href="#mix">Mix Specifications</a></li>
+<li><a href="#surf">Existing Surface</a></li>
+<li><a href="#options">Other Options</a></li>
+<li><a href="#calc">Calculate</a></li>
+<li><a href="#output">Model Output</a></li>
+<li><a href="#export">Export Data</a></li>
+<li><a href="#index">Index</a></li>
+</ul>
+<li><h3>Documentation</h3></li>
+<ul>
+<li><a href="#b1inf">More Information</a></li>
+<li><a href="#b2lim">Limitaions</a></li>
+</ul>
+</ul>
+<a name="general"></a>
+<h2>General Procedure</h2>
+<p>Follow these steps to perform a pavement cooling simulation.</p>
+<ol>
+<li><h4>Enter a project title</h4>
+<p>The project title may be used to identify the route number and location of the project for future reference.  This title will be included in printed output and exported files.</p>
+<p><a href="#toc">Return to Table of Contents</a></p>
+</li>
+<li><h4>Enter the Paving Time</h4>
+<a name="time"></a>
+<p>The time is used in order to determine the angle of the sun for the calculation of net solar flux.  The time entered here should be the start time of the paving operation.</p>
+<p><img src="./images/tpave.png"></p>
+<p>To select the date, click the down arrow at the right of the date box.  Click on the desired date.  Use the left and right arrows at the top to select a different month.</p>
+<p>Time can be entered in AM/PM or 24 hour format.  It is not necessary to type a colon (:) between the hour and minutes.  For ordinary daytime hours, AM or PM need not be typed.  The program assumes times from 6:00 to 11:59 are AM and 12:00 to 5:00 are PM.  To enter times outside of these ranges, type AM or PM after the time (an "a" or "p" will suffice).  Another alternative is to type the time in 24 hour format (values less than 1000 must include the preceding zero, as in 0915).  If the time is on the hour, the minutes need not be typed (Typing "1" will result in 1:00 PM; "01" or "1a" will result in 1:00 AM).</p>
+<p>The default time format is AM/PM.  To view the time in 24 hour format, select this option on the View menu.</p>
+<p><a href="#toc">Return to Table of Contents</a></p>
+</li>
+<li><h4>Enter the Environmental Conditions</h4>
+<a name="envir"></a>
+<h4>Air Temperature</h4>
+<p>This is the local, average, air temperature during paving. It may be determined from the local weather report.  The air temperature is used to calculate how fast the heat will be lost to the surrounding air.  The default temperature is 10 °C (50 °F).</p>
+<p>The following range of temperatures may be used in PaveCool:</p>
+<table class="half">
+<tr><th>Units</th>
+	<th>Minimum</th>
+	<th>Maximum</th></tr>
+<tr><td>English</td>
+	<td>-40 °F</td>
+	<td>120 °F</td></tr>
+<tr><td>SI</td>
+	<td>-40 °C</td>
+	<td>48.9 °C</td></tr>
+</table>
+<a name="wind"></a>
+<h4>Wind Speed</h4>
+<p>This is an estimate of the average wind speed during paving.  Wind speed has a significant effect on the cooling rate of hot-mix asphalt under most operating conditions.</p>
+<p>The wind speed may be predicted from the local weather report, measured at the job site, or estimated using the following criteria:</p>
+<p><b>Beaufort Scale:  Specifications and Equivalent Speeds from Observers Handbook, Meteorological Office, 1982, UK.</b></p>
+<table class="full">
+<tr><th class="col8">Force</th>
+	<th class="col16">Description</th>
+	<th class="col60">Specifications</th>
+	<th class="col16">Wind Speed</th></tr>
+<tr><td class="cellc">0</td>
+	<td class="cellc">Calm</td>
+	<td >Smoke rises vertically.</td>
+	<td class="cellc">0 - 1 mph<br>0 - 2 km/h</td></tr>
+<tr><td class="cellc">1</td>
+	<td class="cellc">Light Air</td>
+	<td >Direction of wind shown by smoke drift, but not by wind vanes.</td>
+	<td class="cellc">1 - 3 mph<br>2 - 5 km/h</td></tr>
+<tr><td class="cellc">2</td>
+	<td class="cellc">Light Breeze</td>
+	<td >Wind felt on face; leaves rustle; ordinary vanes moved by wind.</td>
+	<td class="cellc">4 - 7 mph<br>6 - 11 km/h</td></tr>
+<tr><td class="cellc">3</td>
+	<td class="cellc">Gentle Breeze</td>
+	<td >Leaves and small twigs in constant motion; wind extends light flag.</td>
+	<td class="cellc">8 - 12 mph<br>12 - 20 km/h</td></tr>
+<tr><td class="cellc">4</td>
+	<td class="cellc">Moderate Breeze</td>
+	<td >Wind raises dust and light paper. Small branches are moved.</td>
+	<td class="cellc">13 - 18 mph<br>21 - 30 km/h</td></tr>
+<tr><td class="cellc">5</td>
+	<td class="cellc">Fresh Breeze</td>
+	<td >Small trees in leaf begin to sway; crested wavelets form on inland waters.</td>
+	<td class="cellc">19 - 24 mph<br>31 - 39 km/h</td></tr>
+<tr><td class="cellc">6</td>
+	<td class="cellc">Strong Breeze</td>
+	<td >Large branches in motion; whistling heard in telegraph wires; umbrellas used with difficulty.</td>
+	<td class="cellc">25 - 31 mph<br>40 - 50 km/h</td></tr>
+<tr><td class="cellc">7</td>
+	<td class="cellc">Near Gale</td>
+	<td >Whole trees in motion; inconvenience felt when walking into wind.</td>
+	<td class="cellc">32 - 38 mph<br>51 - 61 km/h</td></tr>
+<tr><td class="cellc">8</td>
+	<td class="cellc">Gale</td>
+	<td >Wind breaks twigs off trees; generally impedes progress.</td>
+	<td class="cellc">39 - 46 mph<br>62 - 74 km/h</td></tr>
+</table>
+<p><a href="#toc">Return to Table of Contents</a></p>
+</ol>
+<h3>Index</h3>
+<a name="index"</a>
+<dl>
+<dt><a href="#envir">air temperature</a></dt>
+<dt><a href="#surf">base material</a></dt>
+<dt><a href="#wind">Beaufort Scale</a></dt>
+</dl>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>tdlg</class>
+ <widget class="QDialog" name="tdlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>275</width>
+    <height>150</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>275</width>
+    <height>150</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string/>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="minimumSize">
+      <size>
+       <width>160</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string comment="rolling synonyms: compaction, densification"/>
+     </property>
+     <property name="text">
+      <string>Start Rolling Temperature</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QSpinBox" name="tsSpin">
+     <property name="minimumSize">
+      <size>
+       <width>64</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="sizeIncrement">
+      <size>
+       <width>64</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Temperature when optimal compaction can begin</string>
+     </property>
+     <property name="accessibleName">
+      <string>Start Rolling Temperature</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QLabel" name="tsuLabel">
+     <property name="minimumSize">
+      <size>
+       <width>18</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QLabel" name="label_2">
+     <property name="minimumSize">
+      <size>
+       <width>160</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string comment="rolling synonyms: compaction, densification"/>
+     </property>
+     <property name="text">
+      <string>Stop Rolling Temperature</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QSpinBox" name="tfSpin">
+     <property name="minimumSize">
+      <size>
+       <width>64</width>
+       <height>20</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Temperature when compaction is no longer possible</string>
+     </property>
+     <property name="accessibleName">
+      <string>Stop Rolling Temperature</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignCenter</set>
+     </property>
+     <property name="maximum">
+      <number>999</number>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QLabel" name="tfuLabel">
+     <property name="minimumSize">
+      <size>
+       <width>18</width>
+       <height>16</height>
+      </size>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0" colspan="2">
+    <widget class="QPushButton" name="defButton">
+     <property name="minimumSize">
+      <size>
+       <width>196</width>
+       <height>24</height>
+      </size>
+     </property>
+     <property name="toolTip">
+      <string>Restore default temperatures for hot-mix asphalt.</string>
+     </property>
+     <property name="accessibleName">
+      <string>Restore Default Temperatures</string>
+     </property>
+     <property name="text">
+      <string>Restore Default Temperatures</string>
+     </property>
+    </widget>
+   </item>
+   <item row="3" column="0">
+    <widget class="QDialogButtonBox" name="buttonBox">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="standardButtons">
+      <set>QDialogButtonBox::Cancel|QDialogButtonBox::Ok</set>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <tabstops>
+  <tabstop>defButton</tabstop>
+  <tabstop>tsSpin</tabstop>
+  <tabstop>tfSpin</tabstop>
+ </tabstops>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>accepted()</signal>
+   <receiver>tdlg</receiver>
+   <slot>accept()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>248</x>
+     <y>254</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>157</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>buttonBox</sender>
+   <signal>rejected()</signal>
+   <receiver>tdlg</receiver>
+   <slot>reject()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>316</x>
+     <y>260</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>286</x>
+     <y>274</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>

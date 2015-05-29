@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/paste24.png</file>
+        <file>images/save24.png</file>
+        <file>images/open24.png</file>
+        <file>images/new24.png</file>
+        <file>images/help24.png</file>
+        <file>images/cut24.png</file>
+        <file>images/copy24.png</file>
+        <file>images/camera24.png</file>
+        <file>images/pdf24.png</file>
+        <file>images/help16.png</file>
+        <file>images/save16.png</file>
+        <file>images/pdf16.png</file>
+        <file>images/paste16.png</file>
+        <file>images/open16.png</file>
+        <file>images/new16.png</file>
+        <file>images/therm24.png</file>
+        <file>images/ttruck24.png</file>
+        <file>images/rollert.png</file>
+        <file>images/camera16.png</file>
+        <file>images/copy16.png</file>
+        <file>images/cut16.png</file>
+        <file>images/back16.png</file>
+        <file>images/forward16.png</file>
+        <file>icons/PaveCool.ico</file>
+        <file>icons/PaveCoolDoc.ico</file>
+        <file>images/overcast16.png</file>
+        <file>images/hazy16.png</file>
+        <file>images/mcloudy16.png</file>
+        <file>images/pcloudy16.png</file>
+        <file>images/sun16.png</file>
+        <file>images/coarse16.png</file>
+        <file>images/dense16.png</file>
+        <file>images/pcc16.png</file>
+        <file>images/soil16.png</file>
+        <file>images/agg16.png</file>
+    </qresource>
+</RCC>

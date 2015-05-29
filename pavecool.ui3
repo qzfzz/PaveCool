@@ -1,0 +1,1161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PaveCool</class>
+ <widget class="QMainWindow" name="PaveCool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>722</width>
+    <height>513</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PaveCool</string>
+  </property>
+  <property name="toolTipDuration">
+   <number>-1</number>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="projectLabel">
+      <property name="minimumSize">
+       <size>
+        <width>57</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Project Title</string>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="4">
+     <widget class="QLineEdit" name="projectEdit">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>10</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>600</width>
+        <height>18</height>
+       </size>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>16777215</width>
+        <height>24</height>
+       </size>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3">
+     <widget class="QGroupBox" name="groupBox1">
+      <property name="minimumSize">
+       <size>
+        <width>151</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Start Date/Time</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QDateEdit" name="dateEdit">
+         <property name="minimumSize">
+          <size>
+           <width>81</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="calendarPopup">
+          <bool>true</bool>
+         </property>
+         <property name="date">
+          <date>
+           <year>2015</year>
+           <month>1</month>
+           <day>1</day>
+          </date>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="timeEdit">
+         <property name="minimumSize">
+          <size>
+           <width>58</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QPushButton" name="timeButton">
+         <property name="minimumSize">
+          <size>
+           <width>135</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Update to Current Time</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="3" rowspan="2">
+     <widget class="QGroupBox" name="groupBox3">
+      <property name="minimumSize">
+       <size>
+        <width>124</width>
+        <height>194</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Mix Specifications</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="mixLabel">
+         <property name="minimumSize">
+          <size>
+           <width>42</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Mix Type</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="3">
+        <widget class="QComboBox" name="gradCombo">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Fine/Dense Graded</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Coarse/SMA</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="0" colspan="3">
+        <widget class="QLabel" name="binderLabel">
+         <property name="minimumSize">
+          <size>
+           <width>116</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Binder Grade</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLabel" name="pgLabel">
+         <property name="minimumSize">
+          <size>
+           <width>16</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>PG</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QComboBox" name="hiCombo">
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>82</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>76</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>70</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>64</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>58</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>52</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>46</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QComboBox" name="loCombo">
+         <property name="minimumSize">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>-10</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>-16</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>-22</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>-28</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>-34</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>-40</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>-46</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="4" column="0" colspan="3">
+        <widget class="QLabel" name="hLabel">
+         <property name="minimumSize">
+          <size>
+           <width>116</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Lift Thickness</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0" colspan="2">
+        <widget class="QDoubleSpinBox" name="hDSpin">
+         <property name="minimumSize">
+          <size>
+           <width>58</width>
+           <height>18</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="minimum">
+          <double>0.500000000000000</double>
+         </property>
+         <property name="maximum">
+          <double>24.000000000000000</double>
+         </property>
+         <property name="singleStep">
+          <double>0.500000000000000</double>
+         </property>
+         <property name="value">
+          <double>3.000000000000000</double>
+         </property>
+        </widget>
+       </item>
+       <item row="6" column="0" colspan="3">
+        <widget class="QLabel" name="tmLabel">
+         <property name="minimumSize">
+          <size>
+           <width>116</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Delivery Temperature</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="0" colspan="2">
+        <widget class="QSpinBox" name="tmSpin">
+         <property name="minimumSize">
+          <size>
+           <width>58</width>
+           <height>18</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="minimum">
+          <number>50</number>
+         </property>
+         <property name="maximum">
+          <number>500</number>
+         </property>
+         <property name="value">
+          <number>270</number>
+         </property>
+        </widget>
+       </item>
+       <item row="7" column="2">
+        <widget class="QLabel" name="tmuLabel">
+         <property name="text">
+          <string>° F</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="4" rowspan="5">
+     <widget class="QGroupBox" name="groupBox6">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>60</horstretch>
+        <verstretch>10</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>385</width>
+        <height>375</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Cooling Curve</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="0" colspan="3">
+     <widget class="QGroupBox" name="groupBox2">
+      <property name="minimumSize">
+       <size>
+        <width>151</width>
+        <height>120</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Environmental Conditions</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0" colspan="2">
+        <widget class="QLabel" name="taLabel">
+         <property name="minimumSize">
+          <size>
+           <width>78</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Air Temperature</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLineEdit" name="taEdit">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="3">
+        <widget class="QLabel" name="tauLabel">
+         <property name="minimumSize">
+          <size>
+           <width>26</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>° F</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0" colspan="2">
+        <widget class="QLabel" name="vwLabel">
+         <property name="minimumSize">
+          <size>
+           <width>78</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Wind Speed</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLineEdit" name="vwEdit">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>18</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="3">
+        <widget class="QLabel" name="vuLabel">
+         <property name="minimumSize">
+          <size>
+           <width>26</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>mph</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="skyLabel">
+         <property name="minimumSize">
+          <size>
+           <width>36</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Sky</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1" colspan="3">
+        <widget class="QComboBox" name="skyCombo">
+         <property name="minimumSize">
+          <size>
+           <width>94</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Clear &amp; Dry</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Humid &amp; Hazy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Partly Cloudy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Mostly Cloudy</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Overcast</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="3" column="0" colspan="2">
+        <widget class="QLabel" name="latLabel">
+         <property name="minimumSize">
+          <size>
+           <width>78</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::LeftToRight</enum>
+         </property>
+         <property name="text">
+          <string>Latitude</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QLineEdit" name="latEdit">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>18</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="3">
+        <widget class="QLabel" name="luLabel">
+         <property name="text">
+          <string>° N</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="3" column="0" colspan="4">
+     <widget class="QGroupBox" name="groupBox4">
+      <property name="minimumSize">
+       <size>
+        <width>280</width>
+        <height>90</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Existing Surface</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QLabel" name="matLabel">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Material Type</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1" colspan="3">
+        <widget class="QComboBox" name="matCombo">
+         <property name="minimumSize">
+          <size>
+           <width>116</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Asphalt</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Concrete</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Granular Base</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Subgrade Soil</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="condLabel">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Material Condition</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QComboBox" name="wCombo">
+         <property name="minimumSize">
+          <size>
+           <width>44</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Dry</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Wet</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="1" column="2" colspan="2">
+        <widget class="QComboBox" name="stateCombo">
+         <property name="minimumSize">
+          <size>
+           <width>70</width>
+           <height>20</height>
+          </size>
+         </property>
+         <item>
+          <property name="text">
+           <string>Frozen</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>Unfrozen</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="tsLabel">
+         <property name="minimumSize">
+          <size>
+           <width>120</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Surface Temperature</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <widget class="QLineEdit" name="tsEdit">
+         <property name="minimumSize">
+          <size>
+           <width>31</width>
+           <height>20</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="placeholderText">
+          <string/>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QLabel" name="tsuLabel">
+         <property name="minimumSize">
+          <size>
+           <width>26</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>° F</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <widget class="QPushButton" name="calcButton">
+         <property name="minimumSize">
+          <size>
+           <width>75</width>
+           <height>24</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Calculate</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="4" column="0" colspan="4">
+     <widget class="QGroupBox" name="groupBox5">
+      <property name="minimumSize">
+       <size>
+        <width>280</width>
+        <height>70</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Recommended Times</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QLabel" name="startLabel1">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Start Rolling</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="startEdit">
+         <property name="minimumSize">
+          <size>
+           <width>48</width>
+           <height>18</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QLabel" name="startLabel2">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>minutes after laydown</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="stopLabel1">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Stop Rolling</string>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="stopEdit">
+         <property name="minimumSize">
+          <size>
+           <width>48</width>
+           <height>18</height>
+          </size>
+         </property>
+         <property name="alignment">
+          <set>Qt::AlignCenter</set>
+         </property>
+         <property name="readOnly">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="stopLabel2">
+         <property name="minimumSize">
+          <size>
+           <width>110</width>
+           <height>16</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>minutes after laydown</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="5" column="0" colspan="2">
+     <widget class="QPushButton" name="discButton">
+      <property name="minimumSize">
+       <size>
+        <width>136</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Disclaimer</string>
+      </property>
+     </widget>
+    </item>
+    <item row="5" column="2" colspan="2">
+     <widget class="QPushButton" name="exportButton">
+      <property name="minimumSize">
+       <size>
+        <width>136</width>
+        <height>24</height>
+       </size>
+      </property>
+      <property name="text">
+       <string>Export Data</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>722</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>&amp;File</string>
+    </property>
+    <addaction name="actionNew"/>
+    <addaction name="actionOpen"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuOptions">
+    <property name="title">
+     <string>&amp;Options</string>
+    </property>
+    <widget class="QMenu" name="menuStart_Stop_Temperatures">
+     <property name="title">
+      <string>Start/Stop &amp;Temperatures</string>
+     </property>
+     <addaction name="actionDefault"/>
+     <addaction name="actionUser_Defined"/>
+    </widget>
+    <widget class="QMenu" name="menuTime_Format">
+     <property name="title">
+      <string>Time &amp;Format</string>
+     </property>
+     <addaction name="action12_Hour"/>
+     <addaction name="action24_Hour"/>
+    </widget>
+    <widget class="QMenu" name="menuUnits">
+     <property name="title">
+      <string>&amp;Units</string>
+     </property>
+     <addaction name="actionEnglish"/>
+     <addaction name="actionSI"/>
+    </widget>
+    <addaction name="menuStart_Stop_Temperatures"/>
+    <addaction name="menuTime_Format"/>
+    <addaction name="menuUnits"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>&amp;Help</string>
+    </property>
+    <addaction name="actionHelp_Topics"/>
+    <addaction name="actionAbout_PaveCool"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuOptions"/>
+   <addaction name="menuHelp"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionNew"/>
+   <addaction name="actionOpen"/>
+   <addaction name="actionSave"/>
+   <addaction name="actionHelp_Topics"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionNew">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/new24.png</normaloff>:/images/new24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;New</string>
+   </property>
+   <property name="iconText">
+    <string>New</string>
+   </property>
+   <property name="toolTip">
+    <string>Create a new PaveCool project.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="actionOpen">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/open24.png</normaloff>:/images/open24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Open</string>
+   </property>
+   <property name="toolTip">
+    <string>Open a PaveCool file.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/save24.png</normaloff>:/images/save24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Save</string>
+   </property>
+   <property name="toolTip">
+    <string>Save the current PaveCool file.</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="text">
+    <string>Save &amp;As...</string>
+   </property>
+   <property name="toolTip">
+    <string>Save this project with a different file name.</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="icon">
+    <iconset>
+     <normaloff>images/exit.png</normaloff>images/exit.png</iconset>
+   </property>
+   <property name="text">
+    <string>E&amp;xit</string>
+   </property>
+   <property name="toolTip">
+    <string>Exit PaveCool</string>
+   </property>
+  </action>
+  <action name="actionDefault">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;Default</string>
+   </property>
+   <property name="toolTip">
+    <string>Use default start and stop temperatures.</string>
+   </property>
+  </action>
+  <action name="actionUser_Defined">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;User Defined</string>
+   </property>
+   <property name="toolTip">
+    <string>Define start and stop temperatures based on asphalt supplier recommendations.</string>
+   </property>
+  </action>
+  <action name="action12_Hour">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;12 Hour</string>
+   </property>
+   <property name="toolTip">
+    <string>12 Hour time format</string>
+   </property>
+  </action>
+  <action name="action24_Hour">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;24 Hour</string>
+   </property>
+   <property name="toolTip">
+    <string>24 Hour time format</string>
+   </property>
+  </action>
+  <action name="actionEnglish">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;English</string>
+   </property>
+   <property name="toolTip">
+    <string>Select English Units (°F, inches, mph)</string>
+   </property>
+  </action>
+  <action name="actionSI">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>&amp;SI</string>
+   </property>
+   <property name="toolTip">
+    <string>Select SI Units (°C, mm, km/h)</string>
+   </property>
+  </action>
+  <action name="actionHelp_Topics">
+   <property name="icon">
+    <iconset resource="resource.qrc">
+     <normaloff>:/images/help24.png</normaloff>:/images/help24.png</iconset>
+   </property>
+   <property name="text">
+    <string>&amp;Help Topics</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="actionAbout_PaveCool">
+   <property name="text">
+    <string>&amp;About PaveCool</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>
